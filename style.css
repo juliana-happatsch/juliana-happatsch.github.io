@@ -1,0 +1,83 @@
+body {
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    background-color: #FFFFFC;
+    color: rgb(83, 83, 83);
+
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.arcoiris1 {
+    text-align: center;
+    color: #FFADAD;
+    font-style: italic;
+    font-size: 40px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.arcoiris2 {
+    background-color: #FFD6A5;
+    line-height: 50px;
+}
+
+.arcoiris3 {
+    background-color: #FDFFB6;
+    line-height: 50px;
+}
+
+.arcoiris4 {
+    background-color: #CAFFBF;
+    line-height: 50px;
+}
+
+.arcoiris5 {
+    background-color: #9BF6FF;
+    line-height: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nome {
+    font-family: ubuntu;
+    font-style: italic;
+}
+
+.desenho {
+    font-size: 18px;
+    color: #eb9f9f;
+}
+
+.html {
+    font-size: 17px;
+    color: #ebc597;
+}
+
+.css {
+    font-size: 20px;
+    color: #eaec77;
+}
+
+.js {
+    font-size: 15px;
+    color: #a5d89a;
+}
+
+.c {
+    font-size: 14px;
+    color: #82dae2;
+}
+
+.ingles {
+    font-size: 18px;
+    color: #8eafe4;
+}
+
+.espanhol {
+    font-size: 14px;
+    color: #aba1e7;
+}
