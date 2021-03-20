@@ -1,22 +1,101 @@
+/** GENERAL **/
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 15px;
-    font-family: Verdana, sans-serif;
-    background-color: #FFFFFC;
-    color: rgb(83, 83, 83);
+    font-family: 'Roboto', sans-serif;
+    background-color: #d4e8ff;
+    color: #474242;
+}
 
+::selection {
+    background-color: #ee7070;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #628ab8;
 }
 
 h2 {
     font-size: 30px;
 }
 
-.arcoiris1 {
-    text-align: center;
-    color: #FFADAD;
-    font-style: italic;
-    font-size: 40px;
-    font-family: Ubuntu, sans-serif;
+/** HEADER **/
+
+#header {
+    background-image: url('fotos/fundo.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
 }
+
+.hero-title {
+    text-align: center;
+    color: #fffd8b;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgb(108, 129, 224);
+    padding-top: 100px;
+}
+
+.hero-gif {
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/** MENU **/
+#menu {
+    background-color: rgb(247, 247, 247);
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.253);
+    transition: width 1s ease;
+}
+
+#menu h1 {
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+    color: #628ab8;
+    font-style: italic;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+.icons {
+    width: 30px;
+}
+
+#menu li {
+    margin: 5px 0 5px -25px;
+    margin-left: -40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+/****/
 
 .arcoiris2 {
     background-color: #FFD6A5;
@@ -38,9 +117,7 @@ h2 {
     line-height: 50px;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 #nome {
     font-family: ubuntu;
