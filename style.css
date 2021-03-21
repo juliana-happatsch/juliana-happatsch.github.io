@@ -147,7 +147,8 @@ a {
 #description-box img {
     width: 350px;
     border-radius: 50%;
-    transition: width 1s ease;top: 0;  
+    transition: width 1s ease;
+    top: 0;  
     bottom: 0;  
     left: 0;  
     right: 0;  
@@ -160,7 +161,7 @@ a {
     transition: width 1s ease; 
 }
 
-/** HABILITIES **/
+/** SKILLS **/
 #skills {
     background-color: #89bffc;
     height: 640px;
@@ -232,12 +233,85 @@ a {
     margin-left:70px;
 }
 
-/****/
+/** CONTACT **/
+#contact {
+    background-color: #6cb1ff;
+    height: 640px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
 
+#contact h2 {
+    text-align: center;
+    color: #fffc61ee;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgba(70, 76, 100, 0.521);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
 
+#github {
+    width: 100px;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    position: absolute;
+    transition: width 1s ease; 
+}
 
+#linkedin {
+    width: 100px;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    position: absolute;
+    transition: width 1s ease; 
+}
 
+#contact a {
+    color: white;
+}
 
+.contact-circle {
+    background-color: #f0f0f0c7;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+#contact-1 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 430px;
+}
+
+#contact-2 {
+    float: right;
+    margin-top: 40px;
+    margin-right: 430px;
+}
+
+#contact h3 {
+    margin-top: 15px;
+    transition: color .5s ease;
+}
+
+#contact h3:hover {
+    color: yellow;
+}
+
+#contact img:hover {
+    width: 130px;
+}
 
 
 
