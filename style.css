@@ -1,22 +1,323 @@
+/** GENERAL **/
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-size: 15px;
-    font-family: Verdana, sans-serif;
-    background-color: #FFFFFC;
-    color: rgb(83, 83, 83);
-
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d4e8ff;
+    color: #474242;
 }
 
-h2 {
-    font-size: 30px;
+::selection {
+    background-color: #ee7070;
+    color: #fff;
 }
 
-.arcoiris1 {
+a {
+    text-decoration: none;
+    color: #628ab8;
+}
+
+/** HEADER **/
+
+#header {
+    background-image: url('fotos/fundo.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+}
+
+.hero-title {
     text-align: center;
-    color: #FFADAD;
-    font-style: italic;
-    font-size: 40px;
-    font-family: Ubuntu, sans-serif;
+    color: #fffc61;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgb(108, 129, 224);
+    padding-top: 100px;
 }
+
+.hero-gif {
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/** MENU **/
+#menu {
+    background-color: rgb(247, 247, 247);
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.253);
+    transition: width 1s ease;
+}
+
+#menu h1 {
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+    color: #628ab8;
+    font-style: italic;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li {
+    margin: 5px 0 5px -25px;
+    margin-left: -40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.icons {
+    width: 30px;
+}
+
+/** DESCRIPTION **/
+#description-box {
+    background-color: #a4cfff;
+    height: 640px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+#description-box h2 {
+    text-align: center;
+    color: #fffc61ee;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgba(70, 76, 100, 0.521);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#d-box {
+    float: right;
+    margin-right: 190px;
+}
+
+#d-box h3 {
+    margin-top: 80px;
+    font-size: 40px;
+    font-style: italic;
+    transition: margin-left 1s ease;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+#d-box h3:hover {
+    margin-left:70px;
+}
+
+#description {
+    background-color: #f0f0f0c7;
+    width: 450px;
+    padding: 15px;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+} 
+
+#circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 230px;
+    background-color: #f0f0f0b0;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+    text-align: center;
+    position: relative;
+}
+
+#description-box img {
+    width: 350px;
+    border-radius: 50%;
+    transition: width 1s ease;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    position: absolute;
+}
+
+#description-box img:hover {
+    width: 400px;
+    transition: width 1s ease; 
+}
+
+/** SKILLS **/
+#skills {
+    background-color: #89bffc;
+    height: 640px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+#skills h2 {
+    text-align: center;
+    color: #fffc61ee;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgba(70, 76, 100, 0.521);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#skills ul {
+    list-style-image: url('fotos/estrelinha.png');
+    line-height: 30px;
+}
+
+#s-box-1 {
+    float:left;
+    margin-left: 260px;
+}
+
+#s-box-2 {
+    float: right;
+    margin-right: 250px;
+}
+
+#hard-skills {
+    background-color: #f0f0f0c7;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+    width: 300px;
+    padding: 15px;
+
+}
+
+#soft-skills {
+    background-color: #f0f0f0c7;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+    width: 300px;
+    padding: 15px;
+}
+
+#s-box-1 h3 {
+    font-size: 40px;
+    font-style: italic;
+    transition: margin-left 1s ease;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+#s-box-2 h3 {
+    font-size: 40px;
+    font-style: italic;
+    transition: margin-left 1s ease;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+#s-box-1 h3:hover {
+    margin-left:70px;
+}
+
+#s-box-2 h3:hover {
+    margin-left:70px;
+}
+
+/** CONTACT **/
+#contact {
+    background-color: #6cb1ff;
+    height: 640px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+#contact h2 {
+    text-align: center;
+    color: #fffc61ee;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgba(70, 76, 100, 0.521);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#github {
+    width: 100px;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    position: absolute;
+    transition: width 1s ease; 
+}
+
+#linkedin {
+    width: 100px;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    position: absolute;
+    transition: width 1s ease; 
+}
+
+#contact a {
+    color: white;
+}
+
+.contact-circle {
+    background-color: #f0f0f0c7;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+#contact-1 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 430px;
+}
+
+#contact-2 {
+    float: right;
+    margin-top: 40px;
+    margin-right: 430px;
+}
+
+#contact h3 {
+    margin-top: 15px;
+    transition: color .5s ease;
+}
+
+#contact h3:hover {
+    color: yellow;
+}
+
+#contact img:hover {
+    width: 130px;
+}
+
+
+
+
+
+
 
 .arcoiris2 {
     background-color: #FFD6A5;
@@ -38,9 +339,7 @@ h2 {
     line-height: 50px;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 #nome {
     font-family: ubuntu;

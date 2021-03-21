@@ -3,40 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfólio</title>
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1 class="arcoiris1">Olá, bem-vindo ao meu portfólio!</h1>
-
-    <h2 class="arcoiris2">Links da página:</h2>
-        <ul>
-            <li><a href="#foto">Minha foto</a></li>
-            <li><a href="#descricao">Descrição</a></li>
-            <li><a href="#habilidades">Minhas habilidades</a></li>
-            <li><a href="#blog">Meu blog favorito</a></li>
-        </ul>
-
-    <h2 id="descricao" class="arcoiris3">Descrição</h2>
-
-    <p id="nome"><strong>Nome</strong>: Juliana Pessoa de Barros Happatsch</p>
-
-    <p>Sou uma brasileira de 20 anos que foi nascida e criada no <em>Rio de Janeiro</em>. Gosto muito de <strong>aprender</strong> novas coisas, não só relacionadas à programação, mas também novas línguas, culturas e qualquer coisa relacionada à arte. Sou tímida, mas quando fico a vontade falo bastante, sou muito curiosa e gosto de sair da minha zona de conforto, mesmo sendo uma experiência um tanto assustadora em alguns momentos.</p>
+    <div id="header">
+        <h1 class="hero-title">Juliana's portfolio</h1>
+        <img src="fotos/gatinho.gif" alt="Gif de um gatinho voando" class="hero-gif">
+    </div>
     
-    <img src="fotos/eu.jpeg" alt="Menina com cabelo cacheado e piercing no septo usando uma camisa preta" width="500px" id="foto">
+    <div id="menu">
+        <h1>index</h1>
+        <ul> 
+            <li>
+                <a href="#header" title="Home">
+                    <img src="fotos/house.svg" alt="Icon de home" class="icons">
+                </a>
+            </li>
+            <li>
+                <a href="#description-box" title="About Me">
+                    <img src="fotos/profile.svg" alt="Icon de perfil" class="icons">
+                </a>
+            </li>
+            <li>
+                <a href="#skills" title="Skills">
+                    <img src="fotos/code.svg" alt="Icon de habilidades" class="icons">
+                </a>
+            </li>
+            <li>
+                <a href="#contact" title="Contact">
+                    <img src="fotos/desktop-computer.svg" alt="Icon de blog" class="icons">
+                </a>
+            </li>
+        </ul>
+    </div>      
 
-    <h2 id="habilidades" class="arcoiris4">Lista de habilidades</h2>
-    <ul>
-        <li class="desenho">Desenho</li>
-        <li class="html">HTML</li>
-        <li class="css"><strong>CSS</strong></li>
-        <li class="js">Javascript</li>
-        <li class="c">C</li>
-        <li class="ingles">Inglês</li>
-        <li class="espanhol">Espanhol</li>
-    </ul>
+    <div id="description-box">
+        <h2>Sobre mim</h2>
+            <div id="d-box">
+                <h3>Juliana Happatsch</h3>
+                <div id="description">
 
-    <h2 id="blog" class="arcoiris5">Meu blog favorito</h2>
-    <a href="https://blog.betrybe.com/" target="_blank">Blog da Trybe</a>
+                <p>Uma brasileira de 20 anos nascida e criada no <strong>Rio de Janeiro</strong>. Sou uma pessoa muito curiosa e criativa que gosta de aprender coisas novas todos os dias, coisas dos mais diversos tipos. Amo qualquer tipo de arte e amo criar. Tento sempre estar melhorando minhas habilidades e sair da minha zona de conforto. Sou bastante tímida, mas estou aberta para conversas e disposta a ajudar no que posso. Entrei na área de tecnologia há pouco tempo e sinto que estou no <em>lugar certo</em>.</p>
+        
+                </div>
+            </div>
+            
+            <div id="circle">
+                <img src="fotos/eu.jpg" alt="Menina com cabelo cacheado e piercing no septo usando uma camisa preta">
+            </div>
+    </div>
+    
+    <div id="skills">
+        <h2>Habilidades</h2>
+        
+        <div id="s-box-1">
+            <h3>Hard Skills</h3>
+                <div id="hard-skills">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>C</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>Inglês</li>
+                        <li>Espanho</li>
+                        <li>Desenho</li>
+                    </ul>
+            </div>
+        </div>
 
+        <div id="s-box-2">
+            <h3>Soft Skills</h3>
+                <div id="soft-skills">
+                    <ul>
+                        <li>Criatividade</li>
+                        <li>Trabalho em equipe</li>
+                        <li>Pensamento crítico</li>
+                        <li>Comunicação</li>
+                        <li>Resiliência</li>
+                        <li>Empatia</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <h2>Contato</h2>
+        <div id="contact-box">
+            <div id="contact-1">
+                <div class="contact-circle">
+                    <a href="https://github.com/juliana-happatsch">
+                        <img src="fotos/github.svg" alt="Icon do GitHub" id="github">
+                    </a>
+                </div>
+
+                <a href="https://github.com/juliana-happatsch">
+                    <h3>juliana-happatsch</h3>
+                </a>
+            </div>
+
+            <div id="contact-2">
+                <div class="contact-circle">
+                    <a href="https://www.linkedin.com/in/julianahappatsch/">
+                        <img src="fotos/linkedin.svg" alt="Icon do LinkedIn" id="linkedin">
+                    </a>
+                </div>
+
+                <a href="https://www.linkedin.com/in/julianahappatsch/">
+                    <h3>Juliana Happatsch</h3>
+                </a>
+            </div>
+        </div> 
+    </div>
 </body>
 </html>
