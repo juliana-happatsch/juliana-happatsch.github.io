@@ -160,7 +160,90 @@ a {
     transition: width 1s ease; 
 }
 
+/** HABILITIES **/
+#skills {
+    background-color: #89bffc;
+    height: 640px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+#skills h2 {
+    text-align: center;
+    color: #fffc61ee;
+    font-size: 90px;
+    font-weight: lighter;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 2px rgba(70, 76, 100, 0.521);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#skills ul {
+    list-style-image: url('fotos/estrelinha.png');
+    line-height: 30px;
+}
+
+#s-box-1 {
+    float:left;
+    margin-left: 260px;
+}
+
+#s-box-2 {
+    float: right;
+    margin-right: 250px;
+}
+
+#hard-skills {
+    background-color: #f0f0f0c7;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+    width: 300px;
+    padding: 15px;
+
+}
+
+#soft-skills {
+    background-color: #f0f0f0c7;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+    width: 300px;
+    padding: 15px;
+}
+
+#s-box-1 h3 {
+    font-size: 40px;
+    font-style: italic;
+    transition: margin-left 1s ease;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+#s-box-2 h3 {
+    font-size: 40px;
+    font-style: italic;
+    transition: margin-left 1s ease;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+#s-box-1 h3:hover {
+    margin-left:70px;
+}
+
+#s-box-2 h3:hover {
+    margin-left:70px;
+}
+
 /****/
+
+
+
+
+
+
+
+
+
+
+
 
 .arcoiris2 {
     background-color: #FFD6A5;
