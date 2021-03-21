@@ -20,9 +20,20 @@ body {
     color: #fff;
 }
 
-a {
-    text-decoration: none;
-    color: #628ab8;
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(238, 229, 101);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(230, 219, 71);
 }
 
 /** HEADER **/
