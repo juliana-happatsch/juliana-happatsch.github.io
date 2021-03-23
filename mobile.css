@@ -1,4 +1,3 @@
-/** GENERAL **/
 * {
     margin: 0;
 }
@@ -8,9 +7,9 @@ html {
 }
 
 body {
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: #d4e8ff;
+    background-color: #a4cfff;
     color: #474242;
 }
 
@@ -46,7 +45,6 @@ a:hover {
 }
 
 /** HEADER **/
-
 #header {
     background-image: url('fotos/fundo.jpg');
     background-size: cover;
@@ -56,7 +54,7 @@ a:hover {
 
 .hero-title {
     font-family: 'VT323', monospace;
-    font-size: 90px;
+    font-size: 6rem;
     font-weight: lighter;
     color: #fffc61;
     text-align: center;
@@ -65,7 +63,7 @@ a:hover {
 }
 
 .hero-gif {
-    width: 100px;
+    width: 150px;
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -74,7 +72,7 @@ a:hover {
 /** MENU **/
 #menu {
     background-color: rgb(247, 247, 247);
-    width: 60px;
+    width: 4.5%;
     position: fixed;
     top: 30%;
     left: 10px;
@@ -111,7 +109,6 @@ a:hover {
     width: 100%;
     height: 102vh;
     margin: auto;
-    display: inline-block;
 }
 
 #description-box h2 {
@@ -126,20 +123,16 @@ a:hover {
 }
 
 #d-box {
-    float: right;
-    margin-right: 190px;
+    margin-right:25%;
+    margin-top: 75%;
 }
 
 #d-box h3 {
-    font-size: 40px;
+    font-size: 3rem;
     font-style: italic;
     color: rgba(255, 255, 255, 0.877);
     margin-top: 80px;   
     transition: margin-left 1s ease;
-}
-
-#d-box h3:hover {
-    margin-left: 70px;
 }
 
 #description {
@@ -156,7 +149,6 @@ a:hover {
     bottom: 0;  
     left: 0;  
     right: 0;
-    position: absolute;
     border-radius: 50%;
     transition: width 1s ease;
 }
@@ -171,10 +163,10 @@ a:hover {
     width: 400px;
     height: 400px;
     text-align: center;
-    margin-left: 230px;
-    position: relative;
+    margin: auto;
     border-radius: 50%;
     box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.158);
+    margin-top: 25%;
 }
 
 /** SKILLS **/
@@ -183,7 +175,6 @@ a:hover {
     height: 102vh;
     width: 100%; 
     margin: auto;
-    display: inline-block;
 }
 
 #skills h2 {
@@ -199,17 +190,17 @@ a:hover {
 
 #skills ul {
     list-style-image: url('fotos/estrelinha.png');
-    line-height: 30px;
+    line-height: 40px;
 }
 
 #s-box-1 {
-    float: left;
-    margin-left: 260px;
+    margin-left: 33%;
+    margin-top: 25%;
 }
 
 #s-box-2 {
-    float: right;
-    margin-right: 250px;
+    margin-right: 33%;
+    margin-top: 30%;
 }
 
 #hard-skills {
@@ -240,20 +231,13 @@ a:hover {
     transition: margin-left 1s ease;
 }
 
-#s-box-1 h3:hover {
-    margin-left: 70px;
-}
-
-#s-box-2 h3:hover {
-    margin-left: 70px;
-}
-
 /** CONTACT **/
 #contact {
     background-color: #6cb1ff;
     height: 102vh;
     width: 100%;
     margin: auto;
+    text-align: center;
     display: inline-block;
 }
 
@@ -297,18 +281,21 @@ a:hover {
     text-align: center;
     position: relative;
     border-radius: 50%;
+    margin-top: 500px;
 }
 
 #contact-1 {
+    position: absolute;
     float: left;
+    margin-left: 25%;
     margin-top: 40px;
-    margin-left: 430px;
 }
 
 #contact-2 {
+    position: absolute;
     float: right;
+    margin-left: 60%;
     margin-top: 40px;
-    margin-right: 430px;
 }
 
 #contact h3 {
