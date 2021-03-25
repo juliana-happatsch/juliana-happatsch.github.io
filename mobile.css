@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     background-color: #a4cfff;
     color: #474242;
@@ -72,17 +72,17 @@ a:hover {
 /** MENU **/
 #menu {
     background-color: rgb(247, 247, 247);
-    width: 4.5%;
+    width: 10%;
     position: fixed;
     top: 30%;
-    left: 10px;
+    left: 20px;
     padding: 2px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(165, 165, 165, 0.253);
 }
 
 #menu h1 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: lighter;
     font-style: italic;
     color: #628ab8;
@@ -94,15 +94,14 @@ a:hover {
 }
 
 #menu li {
-    margin: 5px 0 5px -40px;
+    margin: 25px 0 25px -40px;
     padding-top: 5px;
     text-align: center;
 }
 
 .icons {
-    width: 30px;
+    width: 70px;
 }
-
 /** DESCRIPTION **/
 #description-box {
     background-color: #a4cfff;
@@ -289,6 +288,10 @@ a:hover {
     float: left;
     margin-left: 25%;
     margin-top: 40px;
+}
+
+#contact-1 h3 {
+    margin-left: -36%;
 }
 
 #contact-2 {
