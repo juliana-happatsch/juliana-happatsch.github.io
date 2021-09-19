@@ -1,49 +1,67 @@
 #start-body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .glowing {
   position: relative;
   width: 70%;
   height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.glowing img {
+  width: 110%;
+  margin-top: -5%;
+  z-index: 1;
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .glowing .sparkle1 {
   position: absolute;
-  top: calc(80px * var(--i));
-  right: calc(80px * var(--i));
-  bottom: calc(80px * var(--i));
-  left: calc(80px * var(--i));
+  top: -10%;
+  right: 10%;
   animation: twinkle 2s ease-in-out infinite;
 }
 
 .glowing .sparkle2 {
   position: absolute;
-  top: calc(50px * var(--i));
-  right: calc(10px * var(--i));
-  bottom: calc(50px * var(--i));
-  left: calc(10px * var(--i));
-  opacity: .5;
-  transition: opacity .5s ease;
+  top: 0;
+  left: 0;
   animation: twinkle 2s ease-in-out infinite;
 }
 
 .glowing .sparkle3 {
   position: absolute;
-  top: calc(80px * var(--i));
-  right: calc(80px * var(--i));
-  bottom: calc(80px * var(--i));
-  left: calc(80px * var(--i));
-  opacity: .5;
-  transition: opacity .5s ease;
+  top: 60%;
+  left: -10%;
   animation: twinkle 2s ease-in-out infinite;
 }
 
-.glowing .sparkle1:before {
+.glowing .sparkle4 {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.glowing .sparkle5 {
+  position: absolute;
+  bottom: -10%;
+  left: 30%;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.glowing span:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -59,46 +77,27 @@
               0 0 0 8px rgba(255, 255, 255, 0.048);
 }
 
-.glowing .sparkle2:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -8px;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  opacity: 1;
-  transition: opacity .5s ease;
-  box-shadow: 0 0 20px #fff,
-              0 0 40px #fff,
-              0 0 60px#fff,
-              0 0 80px #fff,
-              0 0 0 8px rgba(255, 255, 255, 0.048);
+.start-btn {
+  background-color: #4A3DD8;
+  position: relative;
+  margin-top: -50px;
+  width: 100px;
+  box-shadow: 5px 4px 0px #170D87;
 }
 
-.glowing .sparkle3:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -8px;
-  width: 5px;
-  height: 5px;
-  background-color: white;
-  border-radius: 50%;
-  opacity: 1;
-  transition: opacity .5s ease;
-  box-shadow: 0 0 20px #fff,
-              0 0 40px #fff,
-              0 0 60px#fff,
-              0 0 80px #fff,
-              0 0 0 8px rgba(255, 255, 255, 0.048);
+.start-btn:active {
+  transform: translate(5px);
+  box-shadow: none;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(5px);}
 }
 
 @keyframes twinkle {
-  0% { opacity: .9; }
-  25% { opacity: .8;}
-  50% { opacity: .6;}
+  0% { opacity: .7; }
+  25% { opacity: .6;}
+  50% { opacity: .5;}
   75% { opacity: .4;}
-  100% { opacity: .8;}
+  100% { opacity: .6;}
 }

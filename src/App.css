@@ -16,3 +16,14 @@ body {
 h1, h2, h3 {
   font-family: 'Righteous', cursive;
 }
+
+.btn {
+  font-family: 'Righteous', cursive;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 9px;
+  font-size: 17px;
+}
