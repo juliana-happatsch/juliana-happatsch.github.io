@@ -30,14 +30,14 @@
   position: absolute;
   top: -10%;
   right: 10%;
-  animation: twinkle 2s ease-in-out infinite;
+  animation: twinkle 1s ease-in-out infinite;
 }
 
 .glowing .sparkle2 {
   position: absolute;
   top: 0;
   left: 0;
-  animation: twinkle 2s ease-in-out infinite;
+  animation: twinkle 1.6s ease-in-out infinite;
 }
 
 .glowing .sparkle3 {
@@ -51,14 +51,14 @@
   position: absolute;
   bottom: 10%;
   right: 0;
-  animation: twinkle 2s ease-in-out infinite;
+  animation: twinkle 1.2s ease-in-out infinite;
 }
 
 .glowing .sparkle5 {
   position: absolute;
   bottom: -10%;
   left: 30%;
-  animation: twinkle 2s ease-in-out infinite;
+  animation: twinkle .7s ease-in-out infinite;
 }
 
 .glowing span:before {
