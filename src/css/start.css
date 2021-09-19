@@ -1,0 +1,104 @@
+#start-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.glowing {
+  position: relative;
+  width: 70%;
+  height: 70%;
+}
+
+.glowing .sparkle1 {
+  position: absolute;
+  top: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.glowing .sparkle2 {
+  position: absolute;
+  top: calc(50px * var(--i));
+  right: calc(10px * var(--i));
+  bottom: calc(50px * var(--i));
+  left: calc(10px * var(--i));
+  opacity: .5;
+  transition: opacity .5s ease;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.glowing .sparkle3 {
+  position: absolute;
+  top: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  opacity: .5;
+  transition: opacity .5s ease;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.glowing .sparkle1:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff,
+              0 0 40px #fff,
+              0 0 60px#fff,
+              0 0 80px #fff,
+              0 0 0 8px rgba(255, 255, 255, 0.048);
+}
+
+.glowing .sparkle2:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity .5s ease;
+  box-shadow: 0 0 20px #fff,
+              0 0 40px #fff,
+              0 0 60px#fff,
+              0 0 80px #fff,
+              0 0 0 8px rgba(255, 255, 255, 0.048);
+}
+
+.glowing .sparkle3:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity .5s ease;
+  box-shadow: 0 0 20px #fff,
+              0 0 40px #fff,
+              0 0 60px#fff,
+              0 0 80px #fff,
+              0 0 0 8px rgba(255, 255, 255, 0.048);
+}
+
+@keyframes twinkle {
+  0% { opacity: .9; }
+  25% { opacity: .8;}
+  50% { opacity: .6;}
+  75% { opacity: .4;}
+  100% { opacity: .8;}
+}
