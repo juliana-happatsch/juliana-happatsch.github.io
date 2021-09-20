@@ -17,6 +17,10 @@ h1, h2, h3 {
   font-family: 'Righteous', cursive;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   font-family: 'Righteous', cursive;
   color: white;
@@ -26,4 +30,6 @@ h1, h2, h3 {
   text-transform: uppercase;
   border-radius: 9px;
   font-size: 17px;
+  text-align: center;
+  cursor: pointer;
 }

@@ -16,7 +16,7 @@ function Start() {
       </section>
       
       <Link to="/home">
-        <button className="btn start-btn">Start</button>
+        <button type="button" className="btn start-btn">Start</button>
       </Link>
     </main>
   )

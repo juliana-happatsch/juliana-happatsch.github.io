@@ -22,7 +22,6 @@
 .glowing img {
   width: 110%;
   margin-top: -5%;
-  z-index: 1;
   animation: bounce 2s ease-in-out infinite;
 }
 
@@ -100,4 +99,10 @@
   50% { opacity: .5;}
   75% { opacity: .4;}
   100% { opacity: .6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .glowing img {
+    width: 50%;
+  }
 }
