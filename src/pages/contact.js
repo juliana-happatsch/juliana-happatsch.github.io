@@ -1,9 +1,14 @@
 import React from "react";
+import HeaderMobile from "../components/headerMobile";
 
 function Contact() {
-  return <div>Contact
-  
-  </div>
+  document.title = "Contact";
+
+  return (
+    <main>
+      <HeaderMobile message="FINAL LEVEL" title="Contact me!" />
+    </main>
+  )
 }
 
 export default Contact;

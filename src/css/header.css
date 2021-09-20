@@ -1,0 +1,25 @@
+.mobile-header {
+  background-color: #08061D;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.mobile-header h1 {
+  font-size: 20px;
+}
+
+.mobile-title-area {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.mobile-title-area h1 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px #4A3DD8, 4px 4px 0px #D81CC8, 6px 6px 0px #F63B5D;
+}

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import '../css/start.css';
 
 function Start() {
+  document.title = "Juliana's Portfolio";
+  
   return (
     <main id="start-body">
       <section className="glowing">

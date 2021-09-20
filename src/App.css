@@ -11,14 +11,23 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
+  max-width: 100%;
 }
 
 h1, h2, h3 {
   font-family: 'Righteous', cursive;
+  font-weight: lighter;
+  letter-spacing: 0.085em;
 }
 
 a {
   text-decoration: none;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+a:hover {
+  color: #F63B5D;
 }
 
 .btn {
