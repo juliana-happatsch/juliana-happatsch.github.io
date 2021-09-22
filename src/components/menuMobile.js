@@ -1,37 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import '../css/menu.css';
 
-function MenuMobile() {
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-  const toggleHamburger = () => {
-    setHamburgerOpen(!hamburgerOpen);
-    const list = document.getElementById('myLinks');
-
-    if (hamburgerOpen) {
-      list.style.display = "inline";
-    } else {
-      list.style.display = "none";
-    }
-  }
-
-  const myFunction = () => {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-
+function MenuMobile({idName}) {
   return (
-    <nav>
+    <nav id={idName}>
       <div id="menuToggle">
-      
         <input type="checkbox" />
-        
-        
         <span></span>
         <span></span>
         <span></span>

@@ -1,12 +1,12 @@
 import React from "react";
-import HeaderMobile from "../components/headerMobile";
+import Header from "../components/header";
 
 function Skills() {
   document.title = "Skills";
   
   return (
     <main>
-      <HeaderMobile message="LEVEL 02" title="My skills" />
+      <Header message="LEVEL 02" title="My skills" />
     </main>
   )
 }

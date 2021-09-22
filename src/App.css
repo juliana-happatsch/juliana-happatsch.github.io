@@ -26,10 +26,6 @@ a {
   font-family: 'Righteous', cursive;
 }
 
-a:hover {
-  color: #F63B5D;
-}
-
 .btn {
   font-family: 'Righteous', cursive;
   color: white;
@@ -41,4 +37,29 @@ a:hover {
   font-size: 17px;
   text-align: center;
   cursor: pointer;
+}
+
+.round-btn {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 20px 7px 5px 0;
+}
+
+.red-btn {
+  background-color: #EA0A0A;
+  box-shadow: 7px 0px 0px #CD0707;
+}
+
+.btn:active {
+  transform: translate(5px);
+  box-shadow: none;
+}
+
+.round-btn:active {
+  transform: translate(7px);
+  box-shadow: none;
 }

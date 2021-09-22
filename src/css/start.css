@@ -84,11 +84,6 @@
   box-shadow: 5px 4px 0px #170D87;
 }
 
-.start-btn:active {
-  transform: translate(5px);
-  box-shadow: none;
-}
-
 @keyframes bounce {
   50% { transform: translateY(5px);}
 }

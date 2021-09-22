@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderMobile from "../components/headerMobile";
+import Header from "../components/header";
 import '../css/home.css';
 
 function Home() {
@@ -7,7 +7,10 @@ function Home() {
 
   return (
     <main>
-      <HeaderMobile message="WELCOME" title="Juliana Happatsch's Portfolio" />
+      <Header
+        message="WELCOME TO..."
+        title="Juliana Happatsch's Portfolio"
+      />
     </main>
   )
 }
