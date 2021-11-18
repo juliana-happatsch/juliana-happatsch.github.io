@@ -102,6 +102,8 @@
   width: 95px;
   height: 100vh;
   background-color: #08061D;
+  position: sticky;
+  top: 0;
 }
 
 .desktop-menu-link {

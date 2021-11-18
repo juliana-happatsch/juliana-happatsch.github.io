@@ -11,13 +11,12 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  max-width: 100%;
+  letter-spacing: 0.085em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Righteous', cursive;
   font-weight: lighter;
-  letter-spacing: 0.085em;
 }
 
 a {
@@ -62,4 +61,20 @@ a {
 .round-btn:active {
   transform: translate(7px);
   box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #A3A3A3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #818181;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6D6D6D;
 }

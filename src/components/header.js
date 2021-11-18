@@ -3,11 +3,23 @@ import MenuMobile from "./menuMobile";
 import MenuDesktop from './menuDesktop';
 import '../css/header.css';
 
-function Header({ message, title }) {
+function Header({ message, title, extra, xpMsg }) {
+  let extraMsg = null;
+
+  if (extra) {
+    function myFunction() {
+      const popupCollection = document.getElementsByClassName("popuptext");
+      const popupArray = [...popupCollection];
+      popupArray.map((text) => text.classList.toggle("show"));
+    }
+
+    extraMsg = <h3 className="extra-xp" onClick={() => myFunction()}>+XP EXTRA
+                  <span className="popuptext" id="myPopup">{ xpMsg }</span>
+                </h3>;
+  }
+
   return (
     <section id="header">
-      <MenuDesktop idName="desktop-menu" />
-
       <header className="general-header">
         <div className="mobile-header">
           <h1>{message}</h1>
@@ -15,14 +27,16 @@ function Header({ message, title }) {
         </div>
 
         <div className="desktop-header">
-          <h3>{message}</h3>
+          <h2>{message}</h2>
           <h1>{title}</h1>
+          { extraMsg }
           <hr />
         </div>
       </header>
 
       <div className="mobile-title-area">
         <h1>{title}</h1>
+        { extraMsg }
         <hr/>
       </div>
     </section>
