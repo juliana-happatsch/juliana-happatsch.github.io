@@ -2,7 +2,10 @@ import React from "react";
 import Header from "../components/header";
 import MenuDesktop from "../components/menuDesktop";
 import ProjectCard from "../components/projectCard";
-import projectBase from '../images/teste.jpg';
+import recipesApp from '../images/91376.png';
+import todoList from '../images/OSXDCD1.png';
+import memeGenerator from '../images/memegenerator.png';
+import pokedex from '../images/pokedex.png';
 import '../css/projects.css';
 
 function Projects() {
@@ -22,25 +25,25 @@ function Projects() {
 
         <section className="projects-info bottom-space">
         <ProjectCard 
-            img={projectBase}
+            img={recipesApp}
             info="oi dnv"
             title="title"
             type="type"
           />
           <ProjectCard 
-            img={projectBase}
+            img={todoList}
             info="oi dnv"
             title="title"
             type="type"
           />
           <ProjectCard 
-            img={projectBase}
+            img={pokedex}
             info="oi dnv"
             title="title"
             type="type"
           />
           <ProjectCard 
-            img={projectBase}
+            img={memeGenerator}
             info="oi dnv"
             title="title"
             type="type"

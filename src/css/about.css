@@ -14,7 +14,7 @@
   transition : all .5s linear
 }
 
-.profile-pic:hover {
+.profile-pic:hover, .profile-pic:active {
   filter: grayscale(0%);
   box-shadow: 2px 2px 0px #4A3DD8, 4px 4px 0px #D81CC8, 6px 6px 0px #F63B5D;
 }

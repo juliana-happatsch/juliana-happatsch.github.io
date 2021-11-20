@@ -19,7 +19,7 @@
 
   .home-page {
     margin-left: 3.5%;
-    width: 80%;
+    width: 85%;
   }
 
   .home-info {
@@ -30,6 +30,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    align-self: center;
     margin-bottom: 80px;
   }
 

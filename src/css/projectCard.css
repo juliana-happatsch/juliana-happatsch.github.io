@@ -12,6 +12,8 @@
   box-shadow: 2px 2px 0px #4A3DD8, 4px 4px 0px #D81CC8, 6px 6px 0px #F63B5D;
   font-size: 13px;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card p {
@@ -20,10 +22,9 @@
 }
 
 .project-card img {
-  width: 100%;
-  height: 250px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .project-info {
@@ -69,6 +70,7 @@
     margin: auto;
     margin-top: 15px;
     margin-bottom: 50px;
+    flex-direction: row;
   }
 
   .project-card {
@@ -76,12 +78,9 @@
   }
 
   .project-card img {
-    min-width: 300px;
-    max-width: 350px;
-    height: 300px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 0;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 30px;
   }
 
   .project-info {

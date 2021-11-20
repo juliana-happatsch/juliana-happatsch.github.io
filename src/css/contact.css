@@ -1,10 +1,166 @@
+.socials {
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  width: 85%;
+  justify-content: center;
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link img {
+  width: 20%;
+  filter: drop-shadow(1px 1px 0px #4A3DD8)
+          drop-shadow(1px 1px 0px #D81CC8)
+          drop-shadow(1px 1px 0px #F63B5D);
+}
+
+.contact-link span {
+  font-size: 10px;
+  margin-left: 15px;
+  align-self: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  margin-top: 20px;
+}
+
+.form-title {
+  margin: 30px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formie {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.493);
+  margin: 7px 0;
+  padding: 7px;
+  color: white;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.548);
+}
+
+.formie::placeholder {
+  font-style: italic;
+}
+
+.formie:focus {
+  outline-style: solid;
+  outline-color: white;
+  outline-width: thin;
+}
+
+.form-btn {
+  background: #D81CC8;
+  box-shadow: 5px 0px 0px #B107A3;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  width: 90px;
+  height: 35px;
+  margin-top: 15px;
+  align-self: flex-end;
+}
+
+.form-btn:active {
+  transform: translate(5px);
+  box-shadow: none;
+}
+
+.message {
+  font-family: 'Righteous', cursive;
+  font-size: 12px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.message p {
+  margin-top: 15px;
+}
+
+.planets {
+  float: right;
+  width: 35%;
+  margin: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-link span {
+    font-size: 2vw;
+    margin-left: 15px;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   .contact {
     display: flex;
   }
 
   .contact-page {
-    margin-left:5%;
-    width: 80%;
+    margin-left: 3.5%;
+    width: 85%;
+  }
+
+  .socials {
+    margin-top: 50px;
+  }
+
+  .contact-link span {
+    font-size: 1.5vw;
+    margin-left: 30px;
+  }
+
+  .form-title {
+    font-size: 25px;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-form form {
+    width: 45%;
+  }
+
+  .formie {
+    padding: 10px;
+  }
+
+  .form-btn {
+    font-size: 15px;
+  }
+
+  .message {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .message p {
+    width: 60%;
+    justify-self: flex-start;
+    margin-top: 0;
   }
 }
