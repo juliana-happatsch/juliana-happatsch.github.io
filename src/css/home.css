@@ -1,0 +1,46 @@
+.home-info {
+  text-align: center;
+}
+
+.home-info h1 {
+  font-size: 4.5vw;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.player img {
+  width: 35%;
+}
+
+@media only screen and (min-width: 769px) {
+  .home {
+    display: flex;
+  }
+
+  .home-page {
+    margin-left: 3.5%;
+    width: 85%;
+  }
+
+  .home-info {
+    text-align: left;
+  }
+
+  .player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 80px;
+  }
+
+  .player h1, .home-info h1 {
+    font-size: 2.5vw;
+    margin: 40px;
+  }
+
+  .player img {
+    width: 30%;
+  }
+}

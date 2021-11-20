@@ -1,0 +1,118 @@
+/*
+* Made by Erik Terwan
+* 24th of November 2015
+* MIT License
+*
+*
+* If you are thinking of using this in
+* production code, beware of the browser
+* prefixes.
+*/
+
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 8px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 3px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  display: none;
+  width: 250px;
+  margin: 15px 0 0 -615%;
+  letter-spacing: 0.085em;
+  line-height: 19px;
+  padding: 15px;
+  text-align: center;
+  background: #08061D;
+  list-style-type: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#menu li {
+  padding: 10px 0;
+}
+
+#menuToggle input:checked ~ ul {
+  opacity: 1;
+  display: block;
+}
+
+.desktop-menu {
+  width: 95px;
+  height: 100vh;
+  background-color: #08061D;
+  position: sticky;
+  top: 0;
+}
+
+.desktop-menu-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-menu-link:active button {
+  transform: translate(7px);
+  box-shadow: none;
+}

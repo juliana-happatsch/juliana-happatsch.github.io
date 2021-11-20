@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
+
+.info-card {
+  text-align: left;
+  display: flex;
+  font-family: 'Righteous', cursive;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px #4A3DD8, 4px 4px 0px #D81CC8, 6px 6px 0px #F63B5D;
+  font-size: 13px;
+  align-self: center;
+}
+
+.vl {
+  border-left: 1px solid white;
+  height: auto;
+  margin: 0 13px;
+}
+
+.about-category, .about-infos {
+  line-height: 35px;
+}
+
+.about-info { 
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 769px) {
+  .info-card {
+    margin: auto;
+    margin-top: 15px;
+    margin-right: 25px;
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .vl {
+    margin: 0 30px;
+  }
+
+  .about-category, .about-infos {
+    line-height: 40px;
+  }
+}
