@@ -51,7 +51,7 @@ span.active {
   .skills-btns {
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
   }
 
   .hs-btn {

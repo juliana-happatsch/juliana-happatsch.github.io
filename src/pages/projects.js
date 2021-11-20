@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../components/header";
 import MenuDesktop from "../components/menuDesktop";
+import ProjectCard from "../components/projectCard";
+import projectBase from '../images/teste.jpg';
 import '../css/projects.css';
 
 function Projects() {
@@ -17,6 +19,33 @@ function Projects() {
           extra={true}
           xpMsg="bonus fact: my first tumblr theme was a cat theme"
         />
+
+        <section className="projects-info bottom-space">
+        <ProjectCard 
+            img={projectBase}
+            info="oi dnv"
+            title="title"
+            type="type"
+          />
+          <ProjectCard 
+            img={projectBase}
+            info="oi dnv"
+            title="title"
+            type="type"
+          />
+          <ProjectCard 
+            img={projectBase}
+            info="oi dnv"
+            title="title"
+            type="type"
+          />
+          <ProjectCard 
+            img={projectBase}
+            info="oi dnv"
+            title="title"
+            type="type"
+          />
+        </section>
       </section>
     </main>
   );

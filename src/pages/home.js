@@ -4,7 +4,7 @@ import MenuDesktop from "../components/menuDesktop";
 import InfoCard from "../components/infoCard";
 import ProjectCard from "../components/projectCard";
 import meGif from '../images/ezgif.com-gif-maker.gif';
-import projectBase from '../images/teste.jpg'
+import projectBase from '../images/teste.jpg';
 import '../css/home.css';
 
 function Home() {
