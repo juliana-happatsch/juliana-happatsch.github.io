@@ -1,6 +1,5 @@
 import React from "react";
 import MenuMobile from "./menuMobile";
-import MenuDesktop from './menuDesktop';
 import '../css/header.css';
 
 function Header({ message, title, extra, xpMsg }) {

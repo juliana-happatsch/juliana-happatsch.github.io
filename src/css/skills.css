@@ -1,10 +1,70 @@
+.ss, .hs {
+  display: flex;
+}
+
+.ss span, .hs span {
+  font-family: 'Righteous', cursive;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+span.active {
+  text-shadow: 1px 1px 0px #4A3DD8,
+               2px 2px 0px #D81CC8,
+               3px 3px 0px #F63B5D;
+}
+
+.hs-btn {
+  background-color: #4A3DD8;
+  box-shadow: 5px 0px 0px #1F10C0;
+  width: 40px;
+  height: 40px;
+}
+
+.ss-btn {
+  background: #FFC125;
+  box-shadow: 5px 0px 0px #E9A700;
+  width: 40px;
+  height: 40px;
+}
+
+.skills-btns {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  width: 85%;
+}
+
 @media only screen and (min-width: 769px) {
   .skills {
     display: flex;
   }
 
   .skills-page {
-    margin-left:5%;
-    width: 80%;
+    margin-left: 3.5%;
+    width: 85%;
+  }
+
+  .skills-btns {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .hs-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .ss-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ss span, .hs span {
+    font-size: 20px;
   }
 }

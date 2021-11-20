@@ -1,10 +1,67 @@
+.info {
+  margin: auto;
+  margin-top: 40px;
+  width: 85%;
+  font-size: 12px;
+}
+
+.profile-pic {
+  width: 130px;
+  filter: grayscale(100%);
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  transition : all .5s linear
+}
+
+.profile-pic:hover {
+  filter: grayscale(0%);
+  box-shadow: 2px 2px 0px #4A3DD8, 4px 4px 0px #D81CC8, 6px 6px 0px #F63B5D;
+}
+
+.square {
+  width: 130px;
+  height: 130px;
+  border: 1px solid white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 @media only screen and (min-width: 769px) {
   .about {
     display: flex;
   }
 
   .about-page {
-    margin-left:5%;
-    width: 80%;
+    margin-left: 3.5%;
+    width: 85%;
+  }
+
+  .info {
+    margin: auto;
+    margin-top: 60px;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .profile-pic {
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
+
+  .square {
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .first-p {
+    padding-top: 6%;
+    padding-bottom: 7%;
   }
 }

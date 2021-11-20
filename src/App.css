@@ -63,6 +63,10 @@ a {
   box-shadow: none;
 }
 
+.bottom-space {
+  padding-bottom: 50px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

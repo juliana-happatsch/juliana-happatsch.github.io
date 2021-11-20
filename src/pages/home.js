@@ -3,6 +3,8 @@ import Header from "../components/header";
 import MenuDesktop from "../components/menuDesktop";
 import InfoCard from "../components/infoCard";
 import ProjectCard from "../components/projectCard";
+import meGif from '../images/ezgif.com-gif-maker.gif';
+import projectBase from '../images/teste.jpg'
 import '../css/home.css';
 
 function Home() {
@@ -21,31 +23,31 @@ function Home() {
         <section className="home-info bottom-space">
           <h1>Player 01</h1>
           <div className="player">
-            <img src="../images/ezgif.com-gif-maker.gif" alt="eu" />
-            <InfoCard info="oi" klass="profile" />
+            <img src={meGif} alt="eu" />
+            <InfoCard />
           </div>
 
           <h1>Projects</h1>
           <ProjectCard 
-            img='../images/teste.jpg'
+            img={projectBase}
             info="oi dnv"
             title="title"
             type="type"
           />
           <ProjectCard 
-            img='../images/teste.jpg'
+            img={projectBase}
             info="oi dnv"
             title="title"
             type="type"
           />
           <ProjectCard 
-            img='../images/teste.jpg'
+            img={projectBase}
             info="oi dnv"
             title="title"
             type="type"
           />
           <ProjectCard 
-            img='../images/teste.jpg'
+            img={projectBase}
             info="oi dnv"
             title="title"
             type="type"

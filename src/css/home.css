@@ -19,7 +19,7 @@
 
   .home-page {
     margin-left: 3.5%;
-    width: 85%;
+    width: 80%;
   }
 
   .home-info {
@@ -29,6 +29,7 @@
   .player {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 80px;
   }
 
@@ -39,10 +40,5 @@
 
   .player img {
     width: 30%;
-  }
-
-  .profile {
-    width: 60%;
-    margin: auto;
   }
 }

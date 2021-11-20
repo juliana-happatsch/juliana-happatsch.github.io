@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ticket from '../images/ticket.png';
 import '../css/start.css';
 
 function Start() {
@@ -14,7 +15,8 @@ function Start() {
         <span className="sparkle4"></span>
         <span className="sparkle5"></span>
 
-        <img src="../images/ticker.png" alt="ticket" />
+        
+        <img src={ticket} alt="ticket" />
       </section>
       
       <Link to="/home">
