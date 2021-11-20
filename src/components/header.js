@@ -29,7 +29,7 @@ function Header({ message, title, extra, xpMsg }) {
           <h2>{message}</h2>
           <h1>{title}</h1>
           { extraMsg }
-          <hr />
+          <hr/>
         </div>
       </header>
 
