@@ -172,11 +172,23 @@ hr {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
   @media only screen and (max-width: 1500px) {
     .extra-xp .popuptext {
       left: 80%;
     }
+  }
+}
+
+@media only screen and (min-width: 1501px) {
+  .extra-xp .popuptext {
+    left: 85%;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .extra-xp .popuptext {
+    left: 90%;
   }
 }
 
