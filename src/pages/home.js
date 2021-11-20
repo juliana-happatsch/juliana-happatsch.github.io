@@ -4,11 +4,21 @@ import MenuDesktop from "../components/menuDesktop";
 import InfoCard from "../components/infoCard";
 import ProjectCard from "../components/projectCard";
 import meGif from '../images/ezgif.com-gif-maker.gif';
-import projectBase from '../images/teste.jpg';
+import recipesApp from '../images/recipesapp.png';
+import todoList from '../images/todolist.png';
+import memeGenerator from '../images/memegenerator.png';
+import pokedex from '../images/pokedex.png';
 import '../css/home.css';
 
 function Home() {
   document.title = "Home";
+  
+  const recipesAppInfo = (
+    <p>
+      STACKS: React, Redux, Context API e CSS.
+      Um app de receitas (feito pensado para mobile) onde o usuário pode interagir e aplicar diferentes tipos de buscas e filtros. Projeto foi feito em grupo.
+    </p>
+  )
 
   return (
     <main className="home">
@@ -29,28 +39,32 @@ function Home() {
 
           <h1>Projects</h1>
           <ProjectCard 
-            img={projectBase}
-            info="oi dnv"
-            title="title"
-            type="type"
+            img={recipesApp}
+            info={recipesAppInfo}
+            title="Recipes App"
+            type="Mobile First"
+            link='https://juliana-happatsch.github.io/recipes-app/'
           />
           <ProjectCard 
-            img={projectBase}
+            img={todoList}
             info="oi dnv"
             title="title"
-            type="type"
+            type="Desktop"
+            link="https://juliana-happatsch.github.io/todo-list/"
           />
           <ProjectCard 
-            img={projectBase}
+            img={pokedex}
             info="oi dnv"
             title="title"
-            type="type"
+            type="Desktop / Mobile"
+            link="https://juliana-happatsch.github.io/my-pokedex/"
           />
           <ProjectCard 
-            img={projectBase}
+            img={memeGenerator}
             info="oi dnv"
             title="title"
-            type="type"
+            type="Desktop"
+            link='https://juliana-happatsch.github.io/meme-generator/'
           />
         </section>
       </section>

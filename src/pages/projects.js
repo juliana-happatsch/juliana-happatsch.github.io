@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../components/header";
 import MenuDesktop from "../components/menuDesktop";
 import ProjectCard from "../components/projectCard";
-import recipesApp from '../images/91376.png';
-import todoList from '../images/OSXDCD1.png';
+import recipesApp from '../images/recipesapp.png';
+import todoList from '../images/todolist.png';
 import memeGenerator from '../images/memegenerator.png';
 import pokedex from '../images/pokedex.png';
 import '../css/projects.css';
@@ -27,26 +27,30 @@ function Projects() {
         <ProjectCard 
             img={recipesApp}
             info="oi dnv"
-            title="title"
-            type="type"
+            title="Recipes App"
+            type="Mobile First"
+            link='https://juliana-happatsch.github.io/recipes-app/'
           />
           <ProjectCard 
             img={todoList}
             info="oi dnv"
             title="title"
-            type="type"
+            type="Desktop"
+            link="https://juliana-happatsch.github.io/todo-list/"
           />
           <ProjectCard 
             img={pokedex}
             info="oi dnv"
             title="title"
-            type="type"
+            type="Desktop / Mobile"
+            link="https://juliana-happatsch.github.io/my-pokedex/"
           />
           <ProjectCard 
             img={memeGenerator}
             info="oi dnv"
             title="title"
-            type="type"
+            type="Desktop"
+            link='https://juliana-happatsch.github.io/meme-generator/'
           />
         </section>
       </section>

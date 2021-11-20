@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import '../css/projectCard.css';
 
-function ProjectCard({img, title, type, info, klass}) {
+function ProjectCard({img, title, type, info, klass, link}) {
   return (
     <div className={`project-card ${klass}`}>
       <img src={`${img}`} alt={`${title}`} />
@@ -10,9 +9,9 @@ function ProjectCard({img, title, type, info, klass}) {
         <h2>{title}</h2>
         <h3>{type}</h3>
         <p>{info}</p>
-        <Link to="/projects" className="project-btn-link">
+        <a href={link} className="project-btn-link" rel='noreferrer' target='_blank'>
           <button type="button" className="project-btn">see more</button>
-        </Link>
+        </a>
       </section>
     </div>
   )
