@@ -70,21 +70,21 @@ function Home() {
           <ProjectCard 
             img={todoList}
             info={todoListInfo}
-            title="title"
+            title="Todo List"
             type="Desktop"
             link="https://juliana-happatsch.github.io/todo-list/"
           />
           <ProjectCard 
             img={pokedex}
             info={pokedexInfo}
-            title="title"
+            title="Pokedex"
             type="Desktop / Mobile"
             link="https://juliana-happatsch.github.io/my-pokedex/"
           />
           <ProjectCard 
             img={memeGenerator}
             info={memeGeneratorInfo}
-            title="title"
+            title="Meme Generator"
             type="Desktop"
             link='https://juliana-happatsch.github.io/meme-generator/'
           />
