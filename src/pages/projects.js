@@ -6,6 +6,8 @@ import recipesApp from '../images/recipesapp.png';
 import todoList from '../images/todolist.png';
 import memeGenerator from '../images/memegenerator.png';
 import pokedex from '../images/pokedex.png';
+import marioColors from '../images/mario-mockup.png';
+import snakeGame from '../images/snake-game-mockup.png';
 import '../css/projects.css';
 
 function Projects() {
@@ -40,6 +42,20 @@ function Projects() {
     </p>
   );
 
+  const marioInfo = (
+    <p>
+      HTML, CSS and JavaScript.<br/><br/>
+      My first project using speech recognition! It's a mini game where the users can practice their English pronunciation and vocubulary with colors! I made it following Felipe Aguiar's class in the Digital Innovation One website.
+    </p>
+  );
+
+  const snakeInfo = (
+    <p>
+      HTML, CSS and JavaScript<br/><br/>
+      It was inspired by the famous snake game that we all played once in our lives. I made it following Gabriela Pinheiro's class in the Digital Innovation One website.
+    </p>
+  );
+
   return (
     <main className="projects">
       <MenuDesktop idName="desktop-menu" />
@@ -61,11 +77,25 @@ function Projects() {
             link='https://juliana-happatsch.github.io/recipes-app/'
           />
           <ProjectCard 
+            img={marioColors}
+            info={marioInfo}
+            title="Mario Colors Challenge"
+            type="Desktop / Mobile"
+            link="https://juliana-happatsch.github.io/mario-colors/"
+          />
+          <ProjectCard 
             img={todoList}
             info={todoListInfo}
             title="Todo list"
             type="Desktop"
             link="https://juliana-happatsch.github.io/todo-list/"
+          />
+          <ProjectCard 
+            img={snakeGame}
+            info={snakeInfo}
+            title="Snake Game"
+            type="Desktop"
+            link='https://juliana-happatsch.github.io/snake-game/'
           />
           <ProjectCard 
             img={pokedex}

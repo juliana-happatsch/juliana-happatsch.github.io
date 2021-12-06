@@ -7,7 +7,7 @@ import meGif from '../images/ezgif.com-gif-maker.gif';
 import recipesApp from '../images/recipesapp.png';
 import todoList from '../images/todolist.png';
 import memeGenerator from '../images/memegenerator.png';
-import pokedex from '../images/pokedex.png';
+import marioColors from '../images/mario-mockup.png';
 import '../css/home.css';
 
 function Home() {
@@ -28,10 +28,10 @@ function Home() {
     </p>
   );
 
-  const pokedexInfo = (
+  const marioInfo = (
     <p>
-      React and CSS.<br/><br/>
-      A small responsive app that shows a small list of pokemons. Informations of each pokemon is shown, as, for example, its name, weight and type, in addition it also shows a small gif of the pokemon. It was my first project using React e flexbox and its focus was to practice these things.
+      HTML, CSS and JavaScript.<br/><br/>
+      My first project using speech recognition! It's a mini game where the users can practice their English pronunciation and vocubulary with colors! I made it following Felipe Aguiar's class in the Digital Innovation One website.
     </p>
   );
 
@@ -68,18 +68,18 @@ function Home() {
             link='https://juliana-happatsch.github.io/recipes-app/'
           />
           <ProjectCard 
+            img={marioColors}
+            info={marioInfo}
+            title="Mario Colors Challenge"
+            type="Desktop / Mobile"
+            link="https://juliana-happatsch.github.io/mario-colors/"
+          />
+          <ProjectCard 
             img={todoList}
             info={todoListInfo}
             title="Todo List"
             type="Desktop"
             link="https://juliana-happatsch.github.io/todo-list/"
-          />
-          <ProjectCard 
-            img={pokedex}
-            info={pokedexInfo}
-            title="Pokedex"
-            type="Desktop / Mobile"
-            link="https://juliana-happatsch.github.io/my-pokedex/"
           />
           <ProjectCard 
             img={memeGenerator}
