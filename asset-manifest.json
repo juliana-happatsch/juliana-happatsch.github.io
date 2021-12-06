@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.47ad749f.chunk.css",
-    "main.js": "/static/js/main.77512889.chunk.js",
-    "main.js.map": "/static/js/main.77512889.chunk.js.map",
+    "main.js": "/static/js/main.dce88235.chunk.js",
+    "main.js.map": "/static/js/main.dce88235.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7fcb1065.js",
     "runtime-main.js.map": "/static/js/runtime-main.7fcb1065.js.map",
     "static/js/2.6d25c438.chunk.js": "/static/js/2.6d25c438.chunk.js",
@@ -15,9 +15,11 @@
     "static/media/eu.e9ce9cfb.jpeg": "/static/media/eu.e9ce9cfb.jpeg",
     "static/media/github.09675ef5.svg": "/static/media/github.09675ef5.svg",
     "static/media/linkedin.a805b005.svg": "/static/media/linkedin.a805b005.svg",
+    "static/media/mario-mockup.1287d7dc.png": "/static/media/mario-mockup.1287d7dc.png",
     "static/media/memegenerator.ffaf4a63.png": "/static/media/memegenerator.ffaf4a63.png",
     "static/media/pokedex.ee81c246.png": "/static/media/pokedex.ee81c246.png",
     "static/media/recipesapp.12f7135f.png": "/static/media/recipesapp.12f7135f.png",
+    "static/media/snake-game-mockup.eec9c3cb.png": "/static/media/snake-game-mockup.eec9c3cb.png",
     "static/media/ticket.eb96c558.png": "/static/media/ticket.eb96c558.png",
     "static/media/todolist.de382f13.png": "/static/media/todolist.de382f13.png"
   },
@@ -25,6 +27,6 @@
     "static/js/runtime-main.7fcb1065.js",
     "static/js/2.6d25c438.chunk.js",
     "static/css/main.47ad749f.chunk.css",
-    "static/js/main.77512889.chunk.js"
+    "static/js/main.dce88235.chunk.js"
   ]
 }
